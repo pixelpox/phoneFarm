@@ -2,7 +2,7 @@
 import requests
 import json
 
-API_KEY = 'o.Rfj6Y7C4tGvgMmeSBQ8FSIHNGu7gVG9h'
+API_KEY = 'o.xxx'
 
 # Send a message to all your registered devices.
 def pushMessage(title, body):
