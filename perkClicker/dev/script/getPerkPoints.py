@@ -2,8 +2,8 @@
 import subprocess
 import sys
 import json
-
-jsonData = open('devices.json').read()
+configDir = 'config'
+jsonData = open(configDir + '/' + 'devices.json').read()
 data = json.loads(jsonData)
 numOfDevices = len(data['devices'])
 print numOfDevices
@@ -16,6 +16,7 @@ for i in range(0 , numOfDevices):
 	cropT = data['devices'][i]['cropT']
 	cropR = data['devices'][i]['cropR']
 	cropB = data['devices'][i]['cropB']
-	phonePin = data['devices'][i]['pin']
+	devicePin = data['devices'][i]['pin']
 	
-	subprocess.call(['./pullImage.py' , deviceSerialNumber])
+	subprocess.call(['./script/pullImage.py' , deviceSerialNumber])
+	subprocess.call(['./script/processImage.py' , str(deviceSerialNumber) , str(cropL) , str(cropT) , str(cropR) , str(cropB) , devicePin])
