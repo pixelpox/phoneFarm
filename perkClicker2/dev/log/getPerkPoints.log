@@ -1,0 +1,28 @@
+2018-03-12 17:16:27 - Running Script
+Traceback (most recent call last):
+  File "./script/getPerkPoints.py", line 6, in <module>
+    jsonData = open('devices.json').read()
+IOError: [Errno 2] No such file or directory: 'devices.json'
+2018-03-12 17:16:28 - Script Finished
+2018-03-12 17:17:07 - Running Script
+2018-03-12 17:17:07 - Script Finished
+2018-03-12 17:19:57 - Running Script
+2018-03-12 17:19:57 - Script Finished
+2018-03-12 17:20:42 - Running Script
+2018-03-12 17:20:42 - Script Finished
+2018-03-12 17:21:21 - Running Script
+2018-03-12 17:21:22 - Script Finished
+2018-03-12 17:41:23 - Running Script
+2018-03-12 17:41:24 - Script Finished
+2018-03-12 17:42:42 - Running Script
+2018-03-12 17:42:44 - Script Finished
+2018-03-12 17:43:53 - Running Script
+2018-03-12 17:44:03 - Script Finished
+2018-03-12 17:55:38 - Running Script
+2018-03-12 17:55:47 - Script Finished
+2018-03-12 17:56:33 - Running Script
+2018-03-12 17:56:41 - Script Finished
+2018-03-12 17:59:09 - Running Script
+2018-03-12 17:59:21 - Script Finished
+2018-03-12 18:18:24 - Running Script
+2018-03-12 18:18:35 - Script Finished

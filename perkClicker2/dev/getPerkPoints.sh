@@ -1,9 +1,11 @@
 #!/bin/bash
-cd /home/pi/.github/phoneFarm/perkClicker/dev
+
+rootDir='/home/pi/.github/phoneFarm/perkClicker2/dev'
+cd $rootDir
 
 #output to log file that the script is starting
 current_date_time=`date "+%Y-%m-%d %H:%M:%S"`;
-echo "$current_date_time - Running Script" >> /home/pi/.github/phoneFarm/perkClicker/dev/log/getPerkPoints.log 2>&1;
+echo "$current_date_time - Running Script" >> $rootDir/log/getPerkPoints.log 2>&1;
 ################
 #test script
 ./script/getPerkPoints.py
@@ -15,4 +17,4 @@ echo "$current_date_time - Running Script" >> /home/pi/.github/phoneFarm/perkCli
 
 ################
 current_date_time=`date "+%Y-%m-%d %H:%M:%S"`;
-echo "$current_date_time - Script Finished" >> /home/pi/.github/phoneFarm/perkClicker/dev/log/getPerkPoints.log 2>&1;
+echo "$current_date_time - Script Finished" >> $rootDir/log/getPerkPoints.log 2>&1;
