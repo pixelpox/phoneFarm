@@ -7,7 +7,6 @@ import pytesseract
 
 
 def processImage(deviceSerialNumber , coord):
-    
     tmpDir = 'tmp'
     
     photo = Image.open(tmpDir + "/" + deviceSerialNumber + '-screen.png')

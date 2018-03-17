@@ -1,7 +1,9 @@
 #!/bin/bash
-deviceSerialNo=e69a57a3
+deviceSerialNo=5d74baef
 
-#cd ~/.github/phoneFarm/perkClicker/dev/
+rootDir='/home/pi/.perkClicker'
+cd $rootDir
+
 adb -s $deviceSerialNo shell screencap -p /sdcard/screen.png
 adb -s $deviceSerialNo pull /sdcard/screen.png
-python getScreenResolution.py $deviceSerialNo
+python tools/getScreenResolution.py $deviceSerialNo

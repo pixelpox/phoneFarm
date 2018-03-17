@@ -10,7 +10,7 @@ w  , h = photo.size
 res = str(w) + "x" + str(h)
 print(res)
 
-
+'''
 data = json.load(open('devices.json'))
 
 #print data
@@ -25,3 +25,4 @@ print data
 with open('devices.json' , 'w') as outfile:
         json.dump(data , outfile)
 
+'''
