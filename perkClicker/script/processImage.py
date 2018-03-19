@@ -16,7 +16,7 @@ def processImage(deviceSerialNumber , coord):
     screenContents = pytesseract.image_to_string(Image.open(tmpDir + "/" + deviceSerialNumber + "-cropped.png"))
     
     for line in screenContents.splitlines():
-        if line == 'Are you still watching?':
+        if line == 'Are you still watching?' or line == 'YES':
     		return True
     	else:
     		return False

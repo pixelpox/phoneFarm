@@ -1,8 +1,16 @@
 adb devices
-
 adb -s 5d74baef tcpip 5555
+
+adb -s e69a57a3 tcpip 5555
+
+adb -s 709199303183 tcpip 5555
+
+
+
 adb -s 5d74baef shell ifconfig wlan0
+adb -s e69a57a3 shell ifconfig wlan0
+adb -s 709199303183 shell ifconfig wlan0
 
-adb connect 192.168.0.48:5555
-
-.\adb shell input tap 162 440
+adb connect 192.168.0.191:5555
+adb connect 192.168.0.192:5555
+adb connect 192.168.0.193:5555

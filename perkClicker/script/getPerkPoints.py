@@ -7,6 +7,7 @@ from pullImage import pullImage
 from processImage import processImage
 from triggerPin import triggerPin
 from tapScreen import adbTapScreen
+#from pushbullet import pushMessage
 
 configDir = 'config'
 
@@ -60,12 +61,15 @@ def main():
 		
 		
 		deviceOnline = checkDeviceOnline(deviceSerialNumber)
-		if(deviceOnline):			
+		if(deviceOnline):
+			print "Connected to :" + str(deviceSerialNumber)
 			pullImage(deviceSerialNumber)
 			stillWatching = processImage(deviceSerialNumber , screenCoords)
+			print str(deviceSerialNumber) + " Still watching? : " +str(stillWatching)
 		else:
 			#send out an sos
 			print deviceSerialNumber + " : OFFLINE"
+			#pushMessage(str(deviceSerialNumber) + ' IS OFFLINE' , 'Farm master has lost connectivity to a phone')
 			
 		#check if hitbox has been set
 		if stillWatching and len(deviceHitBox) != 0:
