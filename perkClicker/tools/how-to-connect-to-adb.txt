@@ -13,4 +13,7 @@ adb -s 709199303183 shell ifconfig wlan0
 
 adb connect 192.168.0.191:5555
 adb connect 192.168.0.192:5555
-adb connect 192.168.0.193:5555
+adb connect 192.168.200.193:5555
+
+
+adb connect 192.168.200.6:5555

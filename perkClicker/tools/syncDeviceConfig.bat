@@ -1,0 +1,1 @@
+winscp.exe /log=%USERPROFILE%\AppData\Local\Temp\PerkClickerSync.txt /console /script=C:\github\phoneFarm\perkClicker\config\winScpSync.txt

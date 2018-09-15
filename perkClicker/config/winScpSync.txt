@@ -1,0 +1,2 @@
+open phoneManager
+synchronize remote C:\github\phoneFarm\perkClicker\config /home/pi/phoneFarm/perkClicker/config
